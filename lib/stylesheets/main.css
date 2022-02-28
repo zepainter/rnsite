@@ -53,6 +53,7 @@ html {
 body {
   height: 100vh;
   display: grid;
+  background-color: var(--gray4,gray);
   background: linear-gradient(var(--teal3,black) 0%, var(--teal1,black) 40%, var(--gray4,gray) 100%);
   background-position: center top;
   background-size: cover;
@@ -375,6 +376,12 @@ a {
 @media screen and (max-width: 510px) {
   .maincolumn {
     grid-template-columns: 7% 86% 7%;
+  }
+  .navitem {
+    padding-bottom: 3px;
+  }
+  h1 {
+    bottom: 4px;
   }
   .gen {
     grid-template-columns: 1fr;

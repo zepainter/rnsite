@@ -134,6 +134,9 @@
   .maincolumn {
     grid-template-columns: 7% 86% 7%;
   }
+  #artslides {
+    height: 500vh;
+  }
   #artmenu {
     grid-template-columns: 100%;
     width: 90%;
