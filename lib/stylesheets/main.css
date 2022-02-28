@@ -381,7 +381,10 @@ a {
     grid-template-columns: 7% 86% 7%;
   }
   #navbar span {
-    top: 4px;
+    top: 8px;
+  }
+  .jsbtn span {
+    bottom: 0;
   }
   h1 {
     bottom: 4px;
