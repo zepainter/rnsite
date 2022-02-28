@@ -22,6 +22,9 @@
   z-index: -1;
   overflow-x: hidden;
 }
+#rays2 {
+  display: none;
+}
 
 .iconmenu {
   grid-column: 2/3;
@@ -69,7 +72,7 @@
 }
 @media screen and (max-width: 802px) {
   #namebox {
-    width: 720px;
+    width: 360px;
     padding-top: 64px;
     height: 200px;
     font-size: 2.6rem;
@@ -77,10 +80,16 @@
   #namebirds {
     display: none;
   }
+  #rays1 {
+    display: none;
+  }
+  #rays2 {
+    display: block;
+  }
 }
 @media screen and (max-width: 415px) {
   #namebox {
-    width: 620px;
+    width: 310px;
     padding-top: 54px;
     height: 170px;
     font-size: 2.4rem;
@@ -88,7 +97,7 @@
 }
 @media screen and (max-width: 360px) {
   #namebox {
-    width: 500px;
+    width: 250px;
     padding-top: 41px;
     height: 136px;
     font-size: 2.2rem;

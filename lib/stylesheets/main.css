@@ -49,14 +49,11 @@ html {
   --purple3: rgb(140,55,85);
   --purple4: rgb(130,35,75);
   --purple5: rgb(100,20,50);
-  overflow-x: hidden;
 }
 body {
   height: 100vh;
   display: grid;
   background: linear-gradient(var(--teal3,black) 0%, var(--teal1,black) 40%, var(--gray4,gray) 100%);
-  /*background-color: black;
-  background-image: url("../imgs/background.jpg");*/
   background-position: center top;
   background-size: cover;
   background-attachment: fixed;
@@ -76,9 +73,6 @@ body {
   height: 100%;
   display: grid;
   grid-template-columns: 5% 90% 5%;
-  /*background: linear-gradient(90deg, var(--teal2a7,navy) 0%, var(--teal1a7,teal) 30%, var(--teal1a7,teal) 70%, var(--teal2a7,navy) 100%);
-  border-left: 3px solid var(--purple5,black);
-  border-right: 3px solid var(--purple5,black);*/
 }
 
 /*top nav bar*/
@@ -133,8 +127,6 @@ body {
   margin-top: 20px;
   height: 30px;
   text-align: center;
-  /*background: var(--teal4,gray);*/
-  /*outline: 3px solid var(--teal4,gray);*/
 }
 #bottombar p {
   font-size: .9rem;
@@ -384,11 +376,14 @@ a {
   .maincolumn {
     grid-template-columns: 7% 86% 7%;
   }
-  .genbutton {
+  .gen {
     grid-template-columns: 1fr;
   }
   .gendiv {
-    padding-top: 5px;
+    grid-template-columns: 1fr;
+  }
+  .genp {
+    padding-left: 0;
   }
   .illustration {
     float: none;
