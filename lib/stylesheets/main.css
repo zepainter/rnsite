@@ -1,0 +1,415 @@
+@font-face {
+  font-family: 'Noto Sans';
+  src: url(../fonts/noto-sans-regular.ttf);
+}
+@font-face {
+  font-family: 'Noto Sans';
+  src: url(../fonts/noto-sans-bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Noto Sans';
+  src: url(../fonts/noto-sans-italic.ttf);
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Noto Sans';
+  src: url(../fonts/noto-sans-bolditalic.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Mirza';
+  src: url(../fonts/mirza-regular.ttf);
+}
+@font-face {
+  font-family: 'Mirza';
+  src: url(../fonts/mirza-medium.ttf);
+  font-weight: bold;
+}
+
+html {
+  --teal1: rgb(20,80,80);
+  --teal1a7: rgb(20,80,80,.7);
+  --teal2: rgb(15,60,60);
+  --teal2a7: rgb(15,60,60,.7);
+  --teal3: rgb(12,50,50);
+  --teal4: rgb(9,36,36);
+  --gray0: rgb(240,240,240);
+  --gray1: rgb(220,220,220);
+  --gray2: rgb(170,170,170);
+  --gray3: rgb(130,130,130);
+  --gray4: rgb(110,110,110);
+  --gray5: rgb(95,95,95);
+  --gray6: rgb(50,50,50);
+  --purple1: rgb(200,170,170);
+  --purple2: rgb(160,100,130);
+  --purple2a2: rgba(160, 100, 130, 0.2);
+  --purple2a0: rgb(160,100,130,0);
+  --purple3: rgb(140,55,85);
+  --purple4: rgb(130,35,75);
+  --purple5: rgb(100,20,50);
+  overflow-x: hidden;
+}
+body {
+  height: 100vh;
+  display: grid;
+  background: linear-gradient(var(--teal3,black) 0%, var(--teal1,black) 40%, var(--gray4,gray) 100%);
+  /*background-color: black;
+  background-image: url("../imgs/background.jpg");*/
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 16px;
+  font-family: 'Noto Sans';
+  --headfam: 'Mirza';
+  grid-template-columns: 1fr 86% 1fr;
+  grid-template-rows: 1fr;
+  scrollbar-color: var(--gray3,gray) var(--gray2,lightgray);
+}
+.maincolumn {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  width: 100%;
+  max-width: 800px;
+  justify-self: center;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+  /*background: linear-gradient(90deg, var(--teal2a7,navy) 0%, var(--teal1a7,teal) 30%, var(--teal1a7,teal) 70%, var(--teal2a7,navy) 100%);
+  border-left: 3px solid var(--purple5,black);
+  border-right: 3px solid var(--purple5,black);*/
+}
+
+/*top nav bar*/
+#navbar {
+  grid-column: 2/3;
+  width: 100%;
+  height: 70px;
+  display: grid;
+  font-family: var(--headfam,'Noto Sans');
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1;
+  grid-template-columns: auto 1fr auto;
+}
+#navbardiv {
+  grid-column: 3/4;
+  margin-top: 20px;
+  height: 40px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.navitem {
+  height: 36px;
+  padding: 0 10px 6px 10px;
+  display: grid;
+  text-align: center;
+  align-content: center;
+  color: white;
+  text-shadow: 0 0 3px black;
+  transition: .1s;
+}
+.navitem:hover, #homelink:hover {
+  text-shadow: 0 0 3px white;
+}
+#homelink {
+  margin: 16px 20px 0 0;
+  text-align: center;
+  align-content: center;
+  font-size: 2.2rem;
+  color: white;
+  text-shadow: 0 0 3px black;
+  transition: .1s;
+}
+#activelink {
+  background: linear-gradient(90deg, var(--purple2a0,gray) 0%, var(--purple2,gray) 50%, var(--purple2a0,gray) 100%);
+}
+
+/*bottom bar*/
+#bottombar {
+  grid-column: 1/4;
+  width: 100%;
+  margin-top: 20px;
+  height: 30px;
+  text-align: center;
+  /*background: var(--teal4,gray);*/
+  /*outline: 3px solid var(--teal4,gray);*/
+}
+#bottombar p {
+  font-size: .9rem;
+  font-weight: bold;
+  color: var(--teal4,black);
+}
+
+/*basic things*/
+.textbox {
+  position: relative;
+  grid-column: 2/3;
+  width: 100%;
+  display: block;
+  margin: 25px 0 25px 0;
+  padding: 20px 22px;
+  background: var(--gray1,lightgray);
+  outline: 2px solid var(--purple1,gray);
+  box-shadow: 0 0 7px 7px white;
+}
+.SMicon {
+  height: 25px;
+  display: inline;
+  vertical-align: middle;
+  padding: 0 3px;
+}
+.jsbtn {
+  display: table-cell;
+  vertical-align: middle;
+  height: 27px;
+  width: 190px;
+  border-radius: 5px;
+  border: 2px solid var(--gray5,gray);
+  background: linear-gradient(var(--purple3,black),var(--purple5,black));
+  padding-top: 2px;
+  color: white;
+  font-family: var(--headfam,'Noto Sans');
+  font-size: 1.15rem;
+  transition: .1s;
+}
+.jsbtn span {
+  position: relative;
+  bottom: 4px;
+}
+.jsbtn:hover {
+  text-shadow: 0 0 3px white;
+  cursor: pointer;
+}
+.smalllink {
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--purple4,black);
+}
+.spanbtn {
+  text-decoration: underline;
+  font-weight: bold;
+  color: var(--purple4,black);
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.illustration {
+  clear: right;
+  float: right;
+  margin: 10px 15px 5px 20px;
+}
+
+/*fiction page*/
+.WIPpic {
+  width: 250px;
+}
+
+/*conlang pages*/
+.conpic {
+  height: 250px;
+}
+.gen {
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto 1fr;
+}
+.nonfinal {
+  padding-bottom: 13px;
+}
+.gen button {
+  width: 120px;
+}
+.genp {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  padding-left: 15px;
+}
+.gendiv {
+  display: grid;
+  width: 240px;
+  max-width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+.tablediv {
+  overflow-y: hidden;
+  overflow-x: auto;
+  margin: 5px 0 8px 25px;
+  padding-bottom: 2px;
+  scrollbar-color: var(--gray3,gray) var(--gray2,lightgray);
+}
+.noindent {
+  margin-left: 0;
+}
+.belowheader {
+  margin-top: 0px;
+}
+.finalt {
+  margin-bottom: 3px;
+}
+.Ctable, .Vtable, .Mtable, .gloss {
+  white-space: nowrap;
+}
+.Ptable, .lexicon {
+  white-space: normal;
+}
+.emptycol {
+  width: 15px;
+}
+th, td {
+  text-align: center;
+  padding: 0 5px 0 5px;
+  vertical-align: middle;
+}
+.leftal, .gloss td, .Mtable th, .Mtable td {
+  text-align: left;
+  padding: 0 10px 0 0;
+}
+.Mtable th, .Ctable th {
+  font-style: italic;
+}
+.lexicon td {
+  padding: 2px 10px 2px 0;
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+/*recs page*/
+.recpic {
+  width: 100px;
+}
+
+/*text-level things*/
+p,h1,h2,h3,ul {
+  padding-bottom: 8px;
+}
+.initialp {
+  padding-top: 3px;
+}
+.initialh2 {
+  padding-top: 0;
+}
+.finalp {
+  padding-bottom: 3px;
+}
+.indented {
+  padding-left: 25px;
+}
+.larger {
+  font-size: larger;
+}
+.unbold {
+  font-weight: normal;
+}
+.graytext {
+  color: var(--gray5,black);
+}
+.purpletext, .purpletext td {
+  color: var(--purple4,black);
+}
+.purplemid {
+  border-top: 1px solid var(--purple4,black);
+  border-bottom: 1px solid var(--purple4,black);
+}
+.purpleleft {
+  border-left: 1px solid var(--purple4,black);
+}
+.purpleright {
+  border-right: 1px solid var(--purple4,black);
+}
+.purpletop {
+  border-top: 1px solid var(--purple4,black);
+}
+.purplebottom {
+  border-bottom: 1px solid var(--purple4,black);
+}
+.invistext {
+  color: var(--gray1,lightgray);
+}
+.sc {
+  font-variant: small-caps;
+}
+h1 {
+  position: relative;
+  bottom: 9px;
+  padding-bottom: 2px;
+  font-family: var(--headfam,'Noto Sans');
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: -.01em;
+  color: var(--purple4,black);
+}
+h2 {
+  padding-top: 5px;
+}
+h2, h3 {
+  font-weight: bold;
+}
+ul {
+  margin: 0 30px 0 30px;
+  list-style-type: disc;
+}
+a {
+  text-decoration: none;
+}
+
+
+/*tablet & phone screen-size adjustments below*/
+@media screen and (max-width: 800px) {
+  .translucent {
+    grid-column: 1/4;
+    border: 0px;
+  }
+  .maincolumn {
+    grid-column: 1/4;
+    border: 0px;
+  }
+}
+@media screen and (max-width: 610px) {
+  #navbar {
+    height: 100px;
+  }
+  #navhome {
+    margin-top: 30px;
+  }
+  #navbardiv {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 510px) {
+  .maincolumn {
+    grid-template-columns: 7% 86% 7%;
+  }
+  .genbutton {
+    grid-template-columns: 1fr;
+  }
+  .gendiv {
+    padding-top: 5px;
+  }
+  .illustration {
+    float: none;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 10px 0;
+  }
+}
+@media screen and (max-width: 454px) {
+  #navhome {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .maincolumn {
+    grid-template-columns: 0 100% 0;
+  }
+  #navbar {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
