@@ -117,6 +117,9 @@ body {
   text-shadow: 0 0 3px black;
   transition: .1s;
 }
+#navbar span {
+  position: relative;
+}
 #activelink {
   background: linear-gradient(90deg, var(--purple2a0,gray) 0%, var(--purple2,gray) 50%, var(--purple2a0,gray) 100%);
 }
@@ -377,8 +380,8 @@ a {
   .maincolumn {
     grid-template-columns: 7% 86% 7%;
   }
-  .navitem {
-    padding-bottom: 3px;
+  #navbar span {
+    top: 4px;
   }
   h1 {
     bottom: 4px;
