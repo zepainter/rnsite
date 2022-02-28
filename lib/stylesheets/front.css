@@ -22,6 +22,9 @@
   z-index: -1;
   overflow-x: hidden;
 }
+#namebox span {
+  position: relative;
+}
 #rays2 {
   display: none;
 }
@@ -85,6 +88,11 @@
   }
   #rays2 {
     display: block;
+  }
+}
+@media screen and (max-width: 510px) {
+  #namebox span {
+    top: 10px;
   }
 }
 @media screen and (max-width: 415px) {
