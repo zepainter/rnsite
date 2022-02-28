@@ -386,6 +386,9 @@ a {
   .maincolumn {
     grid-template-columns: 7% 86% 7%;
   }
+  #namebox span {
+    top: 10px;
+  }
   #navbar span {
     top: 8px;
   }
