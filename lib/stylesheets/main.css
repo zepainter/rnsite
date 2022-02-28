@@ -49,11 +49,11 @@ html {
   --purple3: rgb(140,55,85);
   --purple4: rgb(130,35,75);
   --purple5: rgb(100,20,50);
+  background-color: var(--gray4,gray);
 }
 body {
   height: 100vh;
   display: grid;
-  background-color: var(--gray4,gray);
   background: linear-gradient(var(--teal3,black) 0%, var(--teal1,black) 40%, var(--gray4,gray) 100%);
   background-position: center top;
   background-size: cover;
