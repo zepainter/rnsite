@@ -110,6 +110,7 @@
   left: 0;
   height: 100vh;
   width: 100vw;
+  z-index: 10;
   display: grid;
   grid-template-columns: 1fr 15px;
   background: rgb(0,0,0,.7);
@@ -130,10 +131,12 @@
 }
 
 
-@media screen and (max-width: 510px) {
-  .maincolumn {
-    grid-template-columns: 7% 86% 7%;
+@media screen and (max-width: 800px) {
+  #mask {
+    grid-template-columns: 1fr 8px;
   }
+}
+@media screen and (max-width: 510px) {
   #artslides {
     height: 50vh;
   }
@@ -143,8 +146,5 @@
   }
   #click {
     grid-column: 1/2;
-  }
-  .closeupimg {
-    grid-row: 2/3;
   }
 }

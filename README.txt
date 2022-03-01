@@ -1,0 +1,1 @@
+This repository is for the website of author Riley Neither.  All text, images, and creative intellectual property is copyrighted to the author.
