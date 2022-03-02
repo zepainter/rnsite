@@ -81,6 +81,17 @@ body {
   display: grid;
   grid-template-columns: 5% 90% 5%;
 }
+.textbox {
+  position: relative;
+  grid-column: 2/3;
+  width: 100%;
+  display: block;
+  margin: 25px 0 25px 0;
+  padding: 20px 22px;
+  background: var(--gray1,lightgray);
+  outline: 2px solid var(--purple1,gray);
+  box-shadow: 0 0 7px 7px white;
+}
 
 /*top nav bar*/
 #navbar {
@@ -144,18 +155,7 @@ body {
   color: var(--teal4,black);
 }
 
-/*basic things*/
-.textbox {
-  position: relative;
-  grid-column: 2/3;
-  width: 100%;
-  display: block;
-  margin: 25px 0 25px 0;
-  padding: 20px 22px;
-  background: var(--gray1,lightgray);
-  outline: 2px solid var(--purple1,gray);
-  box-shadow: 0 0 7px 7px white;
-}
+/*buttons and links*/
 .SMicon {
   height: 25px;
   display: inline;
@@ -184,12 +184,7 @@ body {
   text-shadow: 0 0 3px white;
   cursor: pointer;
 }
-.smalllink {
-  text-decoration: underline;
-  font-weight: bold;
-  color: var(--purple4,black);
-}
-.spanbtn {
+.spanbtn, .smalllink {
   text-decoration: underline;
   font-weight: bold;
   color: var(--purple4,black);
@@ -198,27 +193,92 @@ body {
 .hidden {
   display: none;
 }
+
+/*tables and illustrations*/
+.tablediv {
+  overflow-y: hidden;
+  overflow-x: auto;
+  margin: 5px 0 8px 25px;
+  padding-bottom: 2px;
+  scrollbar-color: var(--gray3,gray) var(--gray2,lightgray);
+}
+.belowheader {
+  margin-top: 0px;
+}
+.finalt {
+  margin-bottom: 3px;
+}
+.Ctable, .Vtable, .basict {
+  white-space: nowrap;
+}
+.Ptable {
+  white-space: normal;
+}
+th, td {
+  text-align: center;
+  padding: 0 5px 0 5px;
+  vertical-align: middle;
+}
+.Ctable th {
+  font-style: italic;
+}
+.basict td, .basict th {
+  text-align: left;
+}
+.leftal {
+  text-align: left;
+  padding: 0 10px 0 0;
+}
+.spacedcol {
+  padding-right: 20px;
+}
+.graytext {
+  color: var(--gray5,black);
+}
+.invistext {
+  color: var(--gray1,lightgray);
+}
+.purpletext, .purpletext td {
+  color: var(--purple4,black);
+}
+.purplemid {
+  border-top: 1px solid var(--purple4,black);
+  border-bottom: 1px solid var(--purple4,black);
+}
+.purpleleft {
+  border-left: 1px solid var(--purple4,black);
+}
+.purpleright {
+  border-right: 1px solid var(--purple4,black);
+}
+.purpletop {
+  border-top: 1px solid var(--purple4,black);
+}
+.purplebottom {
+  border-bottom: 1px solid var(--purple4,black);
+}
 .illustration {
   clear: right;
   float: right;
   margin: 10px 15px 5px 20px;
 }
-
-/*fiction page*/
 .WIPpic {
   width: 250px;
 }
-
-/*conlang pages*/
 .conpic {
   height: 250px;
 }
+.recpic {
+  width: 100px;
+}
+
+/*conlang name generators*/
 .gen {
   display: grid;
   width: 100%;
   grid-template-columns: auto 1fr;
 }
-.nonfinal {
+.gennonfinal {
   padding-bottom: 13px;
 }
 .gen button {
@@ -235,54 +295,6 @@ body {
   width: 240px;
   max-width: 100%;
   grid-template-columns: 1fr 1fr;
-}
-.tablediv {
-  overflow-y: hidden;
-  overflow-x: auto;
-  margin: 5px 0 8px 25px;
-  padding-bottom: 2px;
-  scrollbar-color: var(--gray3,gray) var(--gray2,lightgray);
-}
-.noindent {
-  margin-left: 0;
-}
-.belowheader {
-  margin-top: 0px;
-}
-.finalt {
-  margin-bottom: 3px;
-}
-.Ctable, .Vtable, .Mtable, .gloss {
-  white-space: nowrap;
-}
-.Ptable, .lexicon {
-  white-space: normal;
-}
-.emptycol {
-  width: 15px;
-}
-th, td {
-  text-align: center;
-  padding: 0 5px 0 5px;
-  vertical-align: middle;
-}
-.leftal, .gloss td, .Mtable th, .Mtable td {
-  text-align: left;
-  padding: 0 10px 0 0;
-}
-.Mtable th, .Ctable th {
-  font-style: italic;
-}
-.lexicon td {
-  padding: 2px 10px 2px 0;
-}
-.nowrap {
-  white-space: nowrap;
-}
-
-/*recs page*/
-.recpic {
-  width: 100px;
 }
 
 /*text-level things*/
@@ -306,31 +318,6 @@ p,h1,h2,h3,ul {
 }
 .unbold {
   font-weight: normal;
-}
-.graytext {
-  color: var(--gray5,black);
-}
-.purpletext, .purpletext td {
-  color: var(--purple4,black);
-}
-.purplemid {
-  border-top: 1px solid var(--purple4,black);
-  border-bottom: 1px solid var(--purple4,black);
-}
-.purpleleft {
-  border-left: 1px solid var(--purple4,black);
-}
-.purpleright {
-  border-right: 1px solid var(--purple4,black);
-}
-.purpletop {
-  border-top: 1px solid var(--purple4,black);
-}
-.purplebottom {
-  border-bottom: 1px solid var(--purple4,black);
-}
-.invistext {
-  color: var(--gray1,lightgray);
 }
 .sc {
   font-variant: small-caps;
@@ -360,7 +347,7 @@ a {
 }
 
 
-/*tablet & phone screen-size adjustments below*/
+/*tablet & phone screen-size adjustments*/
 @media screen and (max-width: 800px) {
   .maincolumn {
     grid-column: 1/4;
