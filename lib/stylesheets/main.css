@@ -362,13 +362,18 @@ a {
 
 /*tablet & phone screen-size adjustments below*/
 @media screen and (max-width: 800px) {
-  .translucent {
-    grid-column: 1/4;
-    border: 0px;
-  }
   .maincolumn {
     grid-column: 1/4;
     border: 0px;
+  }
+  #navbar span {
+    top: 8px;
+  }
+  .jsbtn span {
+    bottom: -2px;
+  }
+  h1 {
+    bottom: 4px;
   }
 }
 @media screen and (max-width: 610px) {
@@ -385,15 +390,6 @@ a {
 @media screen and (max-width: 510px) {
   .maincolumn {
     grid-template-columns: 7% 86% 7%;
-  }
-  #navbar span {
-    top: 8px;
-  }
-  .jsbtn span {
-    bottom: -2px;
-  }
-  h1 {
-    bottom: 4px;
   }
   .gen {
     grid-template-columns: 1fr;
