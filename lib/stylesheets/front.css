@@ -19,12 +19,7 @@
   top: 0;
   width: 100%;
   justify-self: center;
-  z-index: 1;
   overflow-x: hidden;
-}
-#namebox span {
-  position: relative;
-  z-index: 2;
 }
 #nobirds {
   display: none;
