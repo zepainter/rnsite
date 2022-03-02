@@ -50,7 +50,7 @@
 }
 #artmenu {
   position: relative;
-  width: 420px;
+  width: 90%;
   justify-self: center;
   margin-bottom: 8px;
   display: grid;
@@ -143,7 +143,6 @@
   }
   #artmenu {
     grid-template-columns: 100%;
-    width: 90%;
   }
   #click {
     grid-column: 1/2;
