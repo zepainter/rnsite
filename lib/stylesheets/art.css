@@ -83,6 +83,7 @@
   box-shadow: 0 0 5px 3px var(--gray3,gray);
 }
 .thumbnail {
+  position: absolute;
   justify-self: center;
   align-self: center;
   max-height: 90%;
