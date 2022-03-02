@@ -26,7 +26,7 @@
   position: relative;
   z-index: 2;
 }
-#rays2 {
+#nobirds {
   display: none;
 }
 
@@ -81,13 +81,10 @@
     height: 200px;
     font-size: 2.6rem;
   }
-  #namebirds {
+  #birds {
     display: none;
   }
-  #rays1 {
-    display: none;
-  }
-  #rays2 {
+  #nobirds {
     display: block;
   }
 }
