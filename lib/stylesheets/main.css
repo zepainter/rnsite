@@ -257,6 +257,9 @@ th, td {
 .purplebottom {
   border-bottom: 1px solid var(--purple4,black);
 }
+.blacktop {
+  border-top: 1px solid black;
+}
 .illustration {
   clear: right;
   float: right;
@@ -373,6 +376,14 @@ a {
   #navbardiv {
     grid-template-columns: auto auto;
   }
+  .illustration {
+    float: none;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 14px 0;
+  }
 }
 @media screen and (max-width: 510px) {
   .maincolumn {
@@ -386,14 +397,6 @@ a {
   }
   .genp {
     padding-left: 0;
-  }
-  .illustration {
-    float: none;
-    width: 100%;
-    display: grid;
-    justify-content: center;
-    margin: 0;
-    padding: 0 0 14px 0;
   }
 }
 @media screen and (max-width: 454px) {
