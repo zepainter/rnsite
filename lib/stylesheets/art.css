@@ -4,7 +4,7 @@
 #artslides {
   display: grid;
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   justify-self: center;
   position: relative;
   margin-bottom: 20px;
@@ -136,7 +136,7 @@
 }
 @media screen and (max-width: 510px) {
   #artslides {
-    height: 40vh;
+    height: 50vh;
   }
   #artmenu {
     grid-template-columns: 100%;
