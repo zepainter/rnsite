@@ -105,7 +105,7 @@ body {
 }
 .navitem {
   height: 36px;
-  padding: 0 10px;
+  padding: 2px 10px 0 10px;
   display: grid;
   text-align: center;
   align-content: center;
@@ -154,7 +154,7 @@ body {
   display: table-cell;
   vertical-align: middle;
   height: 27px;
-  width: 190px;
+  width: 180px;
   border-radius: 5px;
   border: 2px solid var(--gray5,gray);
   background: linear-gradient(var(--purple3,black),var(--purple5,black));
@@ -274,7 +274,7 @@ th, td {
   padding-bottom: 13px;
 }
 .gen button {
-  width: 120px;
+  width: 110px;
 }
 .genp {
   display: grid;
