@@ -346,16 +346,6 @@ a {
     grid-column: 1/4;
     border: 0px;
   }
-  #navbar span {
-    top: 8px;
-  }
-  .jsbtn span {
-    bottom: -2px;
-  }
-  h1 {
-    /*bottom: 4px;*/
-    margin-top: 0;
-  }
 }
 @media screen and (max-width: 610px) {
   #navbar {
