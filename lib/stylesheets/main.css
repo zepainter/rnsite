@@ -326,9 +326,11 @@ p,h1,h2,h3,ul {
   font-variant: small-caps;
 }
 h1 {
-  position: relative;
+  /*position: relative;
   bottom: 9px;
-  padding-bottom: 2px;
+  padding-bottom: 2px;*/
+  margin-top: -9px;
+  padding-bottom: 10px;
   font-family: var(--headfam,'Noto Sans');
   font-size: 1.8rem;
   font-weight: bold;
