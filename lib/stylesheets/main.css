@@ -102,7 +102,7 @@ body {
   font-family: var(--headfam,'Noto Sans');
   font-size: 1.8rem;
   font-weight: bold;
-  line-height: 1;
+  /*line-height: 1;*/
   grid-template-columns: auto 1fr auto;
 }
 #navbardiv {
@@ -332,7 +332,7 @@ h1 {
   font-family: var(--headfam,'Noto Sans');
   font-size: 1.8rem;
   font-weight: bold;
-  letter-spacing: -.01em;
+  /*letter-spacing: -.01em;*/
   color: var(--purple4,black);
 }
 h2 {
