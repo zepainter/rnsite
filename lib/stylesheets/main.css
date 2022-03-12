@@ -18,15 +18,6 @@
   font-weight: bold;
   font-style: italic;
 }
-@font-face {
-  font-family: 'Mirza';
-  src: url(../fonts/mirza-regular.ttf);
-}
-@font-face {
-  font-family: 'Mirza';
-  src: url(../fonts/mirza-medium.ttf);
-  font-weight: bold;
-}
 
 html {
   --teal1: rgb(20,80,80);
@@ -101,7 +92,7 @@ body {
   display: grid;
   font-family: var(--headfam,'Noto Sans');
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 600;
   /*line-height: 1;*/
   grid-template-columns: auto 1fr auto;
 }
@@ -333,7 +324,7 @@ h1 {
   padding-bottom: 10px;
   font-family: var(--headfam,'Noto Sans');
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 500;
   /*letter-spacing: -.01em;*/
   color: var(--purple4,black);
 }
@@ -365,7 +356,8 @@ a {
     bottom: -2px;
   }
   h1 {
-    bottom: 4px;
+    /*bottom: 4px;*/
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 610px) {
