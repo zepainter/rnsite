@@ -162,7 +162,7 @@ body {
   color: white;
   font-family: var(--headfam,'Noto Sans');
   font-size: 1.05rem;
-  font-weight: 600;
+  font-weight: 700;
   transition: .1s;
 }
 .jsbtn span {
@@ -274,7 +274,7 @@ th, td {
   padding-bottom: 13px;
 }
 .gen button {
-  width: 110px;
+  width: 100px;
 }
 .genp {
   display: grid;
@@ -321,7 +321,7 @@ h1 {
   padding-bottom: 10px;
   font-family: var(--headfam,'Noto Sans');
   font-size: 1.7rem;
-  font-weight: 600;
+  font-weight: 700;
   /*letter-spacing: -.01em;*/
   color: var(--purple4,black);
 }
