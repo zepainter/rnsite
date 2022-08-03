@@ -290,13 +290,13 @@ th, td {
 }
 
 /*text-level things*/
-p,h1,h2,h3,ul {
+p,h2,h3,h4,ul {
   padding-bottom: 8px;
 }
 .initialp {
   padding-top: 3px;
 }
-.initialh2 {
+.initialh3 {
   padding-top: 0;
 }
 .finalp {
@@ -314,7 +314,7 @@ p,h1,h2,h3,ul {
 .sc {
   font-variant: small-caps;
 }
-h1 {
+h2 {
   /*position: relative;
   bottom: 9px;
   padding-bottom: 2px;*/
@@ -325,10 +325,10 @@ h1 {
   /*letter-spacing: -.01em;*/
   color: var(--purple4,black);
 }
-h2 {
+h3 {
   padding-top: 5px;
 }
-h2, h3 {
+h3, h4 {
   font-weight: bold;
 }
 ul {
