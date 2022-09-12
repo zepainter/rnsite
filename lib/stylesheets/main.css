@@ -269,6 +269,7 @@ th, td {
   display: grid;
   width: 100%;
   grid-template-columns: auto 1fr;
+  margin-top: 2px;
 }
 .gennonfinal {
   padding-bottom: 13px;
