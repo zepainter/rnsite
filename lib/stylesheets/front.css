@@ -32,7 +32,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  padding: 12px 0 5px 0;
+  margin: 16px 0 8px 0;
 }
 .menuitem {
   font-family: var(--headfam,'Noto Sans');
@@ -56,6 +56,38 @@
   font-size: 1.125rem;
   text-align: center;
   padding: 20px 30px 16px 30px;
+}
+#introbox2 {
+  position: relative;
+  grid-column: 2/3;
+  width: 100%;
+  display: block;
+  margin: 4px 0 25px 0;
+  padding: 12px 10% 4px 10%;
+  font-size: 1.1875rem;
+  text-align: center;
+  align-content: center;
+  color: white;
+  text-shadow: 0 0 3px black;
+  background: linear-gradient(90deg, var(--purple2a0,gray) 0%, var(--purple2,gray) 30%, var(--purple2,gray) 70%, var(--purple2a0,gray) 100%);
+}
+#smgrid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-content: center;
+  grid-gap: 8px;
+  margin-bottom: 10px;
+}
+.smgrid-icon {
+  grid-column: 1/2;
+  display: grid;
+  align-content: center;
+}
+.smgrid-text {
+  grid-column: 2/3;
+}
+#pronountable {
+  margin-top: 0;
 }
 
 

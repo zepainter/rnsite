@@ -145,10 +145,8 @@ body {
 
 /*buttons and links*/
 .SMicon {
-  height: 25px;
-  display: inline;
-  vertical-align: middle;
-  padding: 0 3px;
+  height: 28px;
+  float: left;
 }
 .jsbtn {
   display: table-cell;
