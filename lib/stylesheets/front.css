@@ -74,6 +74,13 @@
   height: 60px;
 }
 
+.story-thumbnail {
+  float: left;
+  width: 140px;
+  margin-right: 8px;
+  padding-top: 5px;
+}
+
 #smgrid {
   display: grid;
   grid-template-columns: auto 1fr;
