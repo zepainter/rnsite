@@ -50,6 +50,7 @@ body {
   --headfam: 'El Messiri';
   grid-template-columns: 1fr 86% 1fr;
   grid-template-rows: 1fr;
+  overflow-x: hidden;
   scrollbar-color: var(--gray3,gray) var(--gray2,lightgray);
 }
 #bgcolor {
@@ -147,10 +148,10 @@ body {
 #homelink span {
   margin-top: 2px;
 }
-#headerbird {
+#headerdrawing {
   position: relative;
+  top: -8px;
   height: 60px;
-  margin-right: 2px;
   left: -4px;
   transition: .1s;
 }
@@ -304,6 +305,20 @@ th, td {
 }
 .recpic {
   width: 100px;
+}
+.storydiv {
+  display: inline-block;
+  align-content: middle;
+  width: 100%;
+  margin: 5px 0px 3px 0px;
+}
+.storyillustration {
+  clear: left;
+  float: left;
+  margin-right: 15px;
+}
+.storypic {
+  width: 150px;
 }
 
 /*conlang name generators*/
