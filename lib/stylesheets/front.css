@@ -91,6 +91,11 @@
   padding-top: 5px;
 }
 
+#selfportrait {
+  width: 100%;
+  max-width: 220px;
+  margin: 3px 0 8px 0;
+}
 #smgrid {
   display: grid;
   grid-template-columns: auto 1fr;
