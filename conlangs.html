@@ -17,27 +17,37 @@
   </head>
   <body>
     <div id="bgcolor"></div>
-    <div class="maincolumn">
-      <div id="navbar">
-        <a id="navhome" href="https://www.rileyneither.com"><div id="homelink"><img id="headerdrawing" src="lib/imgs/hand-with-fire.png" alt="a stylized hand holding bright blue fire"><span>Riley Neither</span></div></a>
-        <div id=navbardiv>
-          <a id="navwip" href="fiction.html"><div class="navitem"><span>Fiction</span></div></a>
-          <a id="navart" href="art.html"><div class="navitem"><span>Art</span></div></a>
-          <a id="navlang" href="conlangs.html"><div class="navitem" id="activelink"><span>Conlangs</span><div class="active-frame" id="active-top"></div><div class="active-frame" id="active-bottom"></div></div></a>
-          <a id="navrecs" href="bookrecs.html"><div class="navitem"><span>Recs</span></div></a>
-        </div>
+
+    <div id="navbar">
+      <a id="navhome" href="https://www.rileyneither.com"><div id="homelink"><img id="headerdrawing" src="lib/imgs/hand-with-fire.png" alt="a stylized hand holding bright blue fire"><span>Riley Neither</span></div></a>
+      <button id="navcondensed">
+        <div class="navcond-bar"></div>
+        <div class="navcond-bar"></div>
+        <div class="navcond-bar"></div>
+      </button>
+      <div id=navbardiv>
+        <a id="navfic" class="nava" href="fiction.html"><div class="navitem"><span>Fiction</span></div></a>
+        <a id="navart" class="nava" href="art.html"><div class="navitem"><span>Art</span></div></a>
+        <a id="navlang" class="nava" href="conlangs.html"><div class="navitem" id="activelink"><span>Conlangs</span></div></a>
+        <a id="navrecs" class="nava" href="bookrecs.html"><div class="navitem"><span>Recs</span></div></a>
       </div>
+    </div>
 
-      <h1 class="hidden">Riley Neither - Conlangs</h1>
+    <div class="headerbox-frame"></div>
+    <div class="headerbox">
+      <h1 tabindex="0">Conlangs</h1>
+    </div>
+    <div class="headerbox-frame"></div>
 
-      <div class="textbox">
+    <div class="maincolumn">
+      <div class="textbox textbox-intro">
         <p class="initialp finalp" tabindex="0">I'm a linguist by training, so naturally, I love making conlangs.  A conlang (if you didn't know) is a constructed language, like Esperanto or Klingon.  Some of mine are pretty fleshed out, but I won't bore anyone with all those gritty linguistic details; instead I've just put some of my naming languages on this page.  Naming languages are conlangs that are just developed enough to create consistent-sounding character and place names, and I've even made little random name generators for mine!</p>
       </div>
 
       <div class="textbox">
         <h2 tabindex="0">Intro to Conlangs</h2>
         <p>Curious, but don't know what you're looking at?  Let me try to give you a crash course.  Experienced conlangers &amp; linguists, move along!</p>
-        <p class="finalp"><span class="spanbtn hidebtn" id="hideIntro">See more...</span></p>
+        <p class="finalp"><button class="spanbtn hidebtn" id="hideIntro">See more...</button></p>
         <div id="divIntro" class="hidden">
           <p>Linguists often break languages down into phonology (the sounds), morphology (the words), syntax (the sentences), and semantics (the meaning).  A full-fledged conlang will develop all of these, but a naming language will mostly just be phonology, so that's what I'll talk about here.</p>
           <p>It's often handy to organize the sounds of a language into tables.  I've done that for English below.  Sounds are represented with characters from the International Phonetic Alphabet (IPA), which is designed to be able to transcribe any human language.  We can put IPA symbols in slashes or square brackets, /k/ or [k], depending on whether we're talking about psychological units of sound in a given language (phonemes) or about exact pronunciations.  We also use angled brackets, &#8249;k&#8250;, for orthography, how sounds are commonly written.  In the English tables, I put the most common English spelling of each sound in angled brackets; in the tables for my conlangs, the angled brackets show how I've decided to spell that sound in character names and the like.  In many cases, the IPA symbol is the same as the English letter, but not always.</p>
