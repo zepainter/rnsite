@@ -130,6 +130,8 @@ body {
 #navbar {
   position: relative;
   width: 100%;
+  max-width: 1000px;
+  justify-self: center;
   display: grid;
   margin-bottom: 8px;
   padding: 0 5%;
