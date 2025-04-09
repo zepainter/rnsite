@@ -16,102 +16,6 @@
   box-shadow: 0 0 0 6px var(--purple4,black);
 }
 
-
-
-#artbox {
-  display: grid;
-}
-#artslides {
-  display: grid;
-  width: 100%;
-  height: 60vh;
-  justify-self: center;
-  position: relative;
-  margin-bottom: 20px;
-  background: var(--gray2,gray);
-}
-.slideimg {
-  max-width: 100%;
-  max-height: 100%;
-  justify-self: center;
-  align-self: center;
-  position: absolute;
-  transition: .5s;
-}
-#slideback, #slidenext {
-  position: absolute;
-  align-self: center;
-  z-index: 6;
-  height: 100px;
-  width: 50px;
-  background: rgb(0,0,0,.5);
-  opacity: 0;
-  border-radius: 10px;
-  display: grid;
-  text-align: center;
-  align-content: center;
-  padding-bottom: 6px;
-  font-size: 3rem;
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-}
-#slideback {
-  left: 10px;
-}
-#slidenext {
-  right: 10px;
-}
-#artslides:hover div {
-  opacity: .5;
-}
-#slideback:hover, #slidenext:hover {
-  background: black;
-}
-#artmenu {
-  position: relative;
-  width: 90%;
-  justify-self: center;
-  margin-bottom: 8px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
-}
-.menutext {
-  grid-column: 1/3;
-  justify-self: center;
-  text-align: center;
-}
-.menutext p {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-.artworkdiv {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  margin: 15px;
-}
-.thumbnaildiv {
-  position: relative;
-  justify-self: center;
-  height: 150px;
-  width: 180px;
-  display: grid;
-  box-shadow: 0 0 5px 3px var(--gray3,gray);
-}
-.thumbnail {
-  position: absolute;
-  justify-self: center;
-  align-self: center;
-  max-height: 90%;
-  max-width: 90%;
-  outline: 3px solid black;
-  cursor: pointer;
-}
-.artdesc {
-  padding-left: 20px;
-  align-self: center;
-}
 #mask {
   position: fixed;
   top: 0;
@@ -131,37 +35,10 @@
   outline: 3px solid black;
   box-shadow: 0 0 10px 5px black;
 }
-.copydiv {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 5;
-}
 
 
 @media screen and (max-width: 800px) {
   #mask {
     grid-template-columns: 1fr 8px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .artworkdiv {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-  }
-  .artdesc {
-    padding-left: 0;
-    padding-top: 16px;
-  }
-}
-@media screen and (max-width: 510px) {
-  #artslides {
-    height: 50vh;
-  }
-  #artmenu {
-    grid-template-columns: 100%;
-  }
-  #click {
-    grid-column: 1/2;
   }
 }
