@@ -407,7 +407,7 @@ p,h2,h3,h4,ul {
 .initialp {
   padding-top: 3px;
 }
-.initialh3 {
+.initialh3, .initialdiv {
   padding-top: 0;
 }
 .finalp {
@@ -507,5 +507,10 @@ a {
   }
   .genp {
     padding-left: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .storyillustration {
+    float: none;
   }
 }
