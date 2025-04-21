@@ -36,15 +36,17 @@
   width: 100%;
   max-width: 720px;
   justify-self: center;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
   margin: 26px 0 2px 0;
-  padding: 0 5%;
 }
 .menuitem {
   font-family: var(--headfam,'Noto Sans');
   font-size: 1.6rem;
   text-align: center;
+  margin: 0 4px;
+  width: 110px;
 }
 .menuitem a {
   color: white;
@@ -97,10 +99,6 @@
 
 /*small screen adjustments*/
 @media screen and (max-width: 650px) {
-  .iconmenu {
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 20px;
-  }
   #namebox {
     height: 35vw;
     margin-bottom: 40px;

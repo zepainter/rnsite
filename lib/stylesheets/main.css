@@ -43,6 +43,7 @@ html {
   --purple3: rgb(140,55,85);
   --purple4: rgb(130,35,75);
   --purple5: rgb(100,20,50);
+  scroll-behavior: smooth;
 }
 body {
   position: relative;
@@ -468,7 +469,7 @@ a {
     padding: 0 0 14px 0;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 675px) {
   #navbardiv {
     position: absolute;
     right: 36px;
@@ -477,6 +478,9 @@ a {
     background-color: var(--cyan3,gray);
     flex-flow: column nowrap;
     z-index: 20;
+  }
+  .navitem {
+    padding: 2px 12px 0 12px; /*top same as above, only sides are changed*/
   }
   #navcondensed {
     display: grid;
