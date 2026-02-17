@@ -264,13 +264,15 @@ body {
   text-shadow: 0 0 3px white;
   cursor: pointer;
 }
-.spanbtn, .smalllink {
+.spanbtn, .spanbtnlight, .smalllink {
   text-decoration: underline;
-  font-weight: bold;
   color: var(--purple4,black);
   cursor: pointer;
 }
-.spanbtn { /*remove default button styles*/
+.spanbtn, .smalllink {
+  font-weight: bold;
+}
+.spanbtn, .spanbtnlight { /*remove default button styles*/
   border: none;
   background-color: transparent;
   padding: 0;
